@@ -1,3 +1,4 @@
+from lib2to3.pgen2 import driver
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -9,12 +10,12 @@ import csv
 
 
 FUT_WEBAPP = 'https://www.ea.com/fifa/ultimate-team/web-app/'
-DRIVER_PATH = "/Users/manuelrodriguezurda/Documents/Projects/Fut-webscraper/chromedriver"
+DRIVER_PATH = "./chromedriver"
 
 def set_options(options):
   options.add_argument('--start-maximized')
   options.add_argument('--disable-extensions')
-  options.add_argument('--user-data-dir=/Users/manuelrodriguezurda/Library/Application Support/Google/Chrome/Default')
+  options.add_argument(f'--user-data-dir={creds.CHROME_PROFILE_PATH}')
   return options
 
 def login(driver:webdriver):
@@ -132,7 +133,6 @@ def main():
   player_db = open('playerDB.csv', 'w')
   writer = csv.writer(player_db)
   writer.writerow(Player.HEADERS.keys())
-        #player_db.close()
 
   try:
     
@@ -147,7 +147,6 @@ def main():
 
   except Exception as e:
     print(e)
-    # driver.quit()
     pass
 
   finally:
@@ -155,4 +154,4 @@ def main():
 
 if __name__ == "__main__":
   main()
-  time.sleep(100)
+  time.sleep(10)
