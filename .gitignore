@@ -1,3 +1,4 @@
 credentials.py
 chromedriver
 __pycache__
+.DS_Store
