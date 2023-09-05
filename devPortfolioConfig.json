@@ -1,0 +1,11 @@
+{
+  "name":"FUT23-PlayersScraper",
+  "githubUrl":"https://github.com/manuelrurda/FUT23-PlayersScraper",
+  "description": "This web scraper navigates the FUT 23 web app, scans all the players in your current club, and dumps them into a CSV file. This can be opened in excel or viewed with a CSV extension. There you can filter by rating, nation, league, or club which helps when doing SBC's because you have easy view access to all your players with their respective attributes.",
+  "thumbnailUrl": "https://github.com/manuelrurda/FUT23-PlayersScraper/assets/62727899/18eb1ce4-b12b-46f1-b0e8-5157527279ae",
+  "techTags": [
+    "Python",
+    "Selenium",
+    "CSV"
+  ]
+}
