@@ -31,3 +31,6 @@ This web scraper navigates the FUT 23 web app and scans all the players in your 
 <p align="center">
 <img src="./readme-resources/output-excel.png" alt="output raw" width="400"/>
 </p>
+
+![Screen Shot 2023-09-05 at 12 27 15](https://github.com/manuelrurda/FUT23-PlayersScraper/assets/62727899/18eb1ce4-b12b-46f1-b0e8-5157527279ae)
+
